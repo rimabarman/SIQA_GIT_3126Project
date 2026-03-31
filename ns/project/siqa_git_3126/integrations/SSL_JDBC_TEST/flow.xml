@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FLOW VERSION="3.2" CLEANUP="false">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<INVOKE NAME="SSL_JDBC_Test" SERVICE="SSL_JDBC_Test.services:getSSLandCloseConn">
+  <COMMENT></COMMENT>
+</INVOKE>
+</FLOW>
