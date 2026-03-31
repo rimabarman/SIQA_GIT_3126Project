@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FLOW VERSION="3.2" CLEANUP="false">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<INVOKE NAME="Invoke predefined:com.webmethods.cloudstreams.salesforce.rest_v60" TIMEOUT="" SERVICE="project.siqa_git_3126.WmSalesforceRESTProvider.com_webmethods_cloudstreams_salesforce_rest_v60.operations.actions:TestRestCn" VALIDATE-IN="" VALIDATE-OUT="">
+  <COMMENT></COMMENT>
+</INVOKE>
+</FLOW>
