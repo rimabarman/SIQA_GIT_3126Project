@@ -5,4 +5,9 @@
             <keyDetails collectionKey="project.siqa_git_3126.WmSalesforceRESTProvider.com_webmethods_cloudstreams_salesforce_rest_v60.operations.actions:TestRestCn" connectorServiceName="project.siqa_git_3126.WmSalesforceRESTProvider.com_webmethods_cloudstreams_salesforce_rest_v60.operations.actions:TestRestCn"/>
         </servicesKeys>
     </cloudstreamsCollectionKeys>
+    <cloudstreamsCollectionKeys serviceName="WmCloudStreams.SoapVS">
+        <servicesKeys>
+            <keyDetails collectionKey="project.siqa_git_3126.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.operations.actions:TestSoap" connectorServiceName="project.siqa_git_3126.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.operations.actions:TestSoap"/>
+        </servicesKeys>
+    </cloudstreamsCollectionKeys>
 </services>
