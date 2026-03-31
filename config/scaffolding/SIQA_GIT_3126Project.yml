@@ -22,14 +22,22 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
 - name: WmSalesforceProvider
+  version: 12.0.0.0.17
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
+- name: SSL_JDBC_Test
+  gitServerName: rimaSCName
+  gitUrl: https://github.com/prabhakaribm
+  gitUsername: rimabarman
+  gitBranch: main
 services:
 - serviceName: project.siqa_git_3126.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
   packages:
   - name: SIQA_GIT_3126Project
     version: "1.0"
   - name: DADA_ExtendedProperty
+    version: "1.0"
+  - name: SSL_JDBC_Test
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
@@ -45,6 +53,8 @@ services:
     version: "1.0"
   - name: DADA_ExtendedProperty
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
@@ -58,6 +68,8 @@ services:
   - name: SIQA_GIT_3126Project
     version: "1.0"
   - name: DADA_ExtendedProperty
+    version: "1.0"
+  - name: SSL_JDBC_Test
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
@@ -73,6 +85,8 @@ services:
     version: "1.0"
   - name: DADA_ExtendedProperty
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
@@ -86,6 +100,8 @@ services:
   - name: SIQA_GIT_3126Project
     version: "1.0"
   - name: DADA_ExtendedProperty
+    version: "1.0"
+  - name: SSL_JDBC_Test
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
@@ -101,6 +117,8 @@ services:
     version: "1.0"
   - name: DADA_ExtendedProperty
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
@@ -114,6 +132,8 @@ services:
   - name: SIQA_GIT_3126Project
     version: "1.0"
   - name: DADA_ExtendedProperty
+    version: "1.0"
+  - name: SSL_JDBC_Test
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
@@ -133,6 +153,8 @@ services:
     version: "1.0"
   - name: DADA_ExtendedProperty
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
@@ -146,6 +168,40 @@ services:
   - name: SIQA_GIT_3126Project
     version: "1.0"
   - name: DADA_ExtendedProperty
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.17
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.16
+- serviceName: project.siqa_git_3126.integrations:Test_SoapConnector
+  packages:
+  - name: SIQA_GIT_3126Project
+    version: "1.0"
+  - name: DADA_ExtendedProperty
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.17
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.16
+- serviceName: project.siqa_git_3126.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.operations.actions:TestSoap
+  packages:
+  - name: SIQA_GIT_3126Project
+    version: "1.0"
+  - name: DADA_ExtendedProperty
+    version: "1.0"
+  - name: SSL_JDBC_Test
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
@@ -182,6 +238,8 @@ configurationVariables:
   : "false"
   ? cloudstreamsconnection.project..siqa_git_3126..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:SoapAlias.cn.reuseAddr
   : "false"
+  ? iscloudstreamsconnectorservice.project..siqa_git_3126..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..operations..actions:TestSoap.virtualServiceName
+  : WmCloudStreams.SoapVS
   ? cloudstreamsconnection.project..siqa_git_3126..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.cn.socketStaleCheck
   : "true"
   ? artConnection.SIQA_GIT_3126Project.project.siqa_git_3126.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
@@ -248,6 +306,8 @@ configurationVariables:
   : "true"
   ? cloudstreamsconnection.project..siqa_git_3126..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:RestAlias.oauth.consumerId
   : 3MVG9pe2TCoA1Pf6F9PMP1LEDsuYm6pfL6T8OD7YSQUQsx36uZNIjUH3BCzBZ8lgStKaUEITogkQ7hNByxJjv
+  ? iscloudstreamsconnectorservice.project..siqa_git_3126..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..operations..actions:TestSoap.connectionAlias
+  : project.siqa_git_3126.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.connections:SoapAlias
   ? artConnection.SIQA_GIT_3126Project.project.siqa_git_3126.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
   : "false"
   ? cloudstreamsconnection.project..siqa_git_3126..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:SoapAlias.poolIncrementSize
